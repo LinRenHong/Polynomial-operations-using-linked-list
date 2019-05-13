@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		902E32C32289D82300B0853E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 902E32C22289D82300B0853E /* main.cpp */; };
+		902E32CE2289D87300B0853E /* Polynomial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 902E32CC2289D87300B0853E /* Polynomial.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,11 @@
 /* Begin PBXFileReference section */
 		902E32BF2289D82300B0853E /* Polynomial(Linked List) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Polynomial(Linked List)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		902E32C22289D82300B0853E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		902E32C92289D87300B0853E /* Term.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Term.h; sourceTree = "<group>"; };
+		902E32CA2289D87300B0853E /* PolynomialList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolynomialList.h; sourceTree = "<group>"; };
+		902E32CB2289D87300B0853E /* ListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListNode.h; sourceTree = "<group>"; };
+		902E32CC2289D87300B0853E /* Polynomial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Polynomial.cpp; sourceTree = "<group>"; };
+		902E32CD2289D87300B0853E /* Polynomial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Polynomial.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,11 @@
 		902E32C12289D82300B0853E /* Polynomial(Linked List) */ = {
 			isa = PBXGroup;
 			children = (
+				902E32CB2289D87300B0853E /* ListNode.h */,
+				902E32CC2289D87300B0853E /* Polynomial.cpp */,
+				902E32CD2289D87300B0853E /* Polynomial.h */,
+				902E32CA2289D87300B0853E /* PolynomialList.h */,
+				902E32C92289D87300B0853E /* Term.h */,
 				902E32C22289D82300B0853E /* main.cpp */,
 			);
 			path = "Polynomial(Linked List)";
@@ -119,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				902E32C32289D82300B0853E /* main.cpp in Sources */,
+				902E32CE2289D87300B0853E /* Polynomial.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
