@@ -22,11 +22,11 @@ int main(int argc, const char * argv[]) {
     cout << "\nPlease enter second polynomial ( ex : x^2 + 2x + 1 ) : " << endl;
     getline( cin, second );
     
-    Polynomial p(first);
-    Polynomial p2(second);
+    Polynomial p( first );
+    Polynomial p2( second );
     
-    PolynomialList polylist(p);
-    PolynomialList polylist2(p2);
+    PolynomialList polylist( p );
+    PolynomialList polylist2( p2 );
     
     
     cout << "\nFirst polynomial is : " << endl;
@@ -38,7 +38,7 @@ int main(int argc, const char * argv[]) {
     
     cout << "Add a term by exp in first polynomial : ";
     cin >> expIndex;
-    polylist.addTerm(expIndex);
+    polylist.addTerm( expIndex );
     
     cout << "\nAfter add a new term in first polynomial : " << endl;;
     polylist.print();

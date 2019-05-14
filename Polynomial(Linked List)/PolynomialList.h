@@ -88,7 +88,7 @@ PolynomialList::PolynomialList( const PolynomialList &p )
     //如果還沒走訪完欲複製的鏈結
     while( currentPtr != 0 )
     {
-        addTerm(currentPtr->data.exp, currentPtr->data.coef);//將每一項複製給自己
+        addTerm( currentPtr->data.exp, currentPtr->data.coef ); //將每一項複製給自己
         currentPtr = currentPtr->nextPtr;
     }
     poly = p.poly;
@@ -151,7 +151,7 @@ void PolynomialList::addTerm( int i ) //i為欲新增項的指數
                 tempPtr->data.coef += t.coef; //兩者相加
             else //代表欲新增項的指數 > 下一項的指數
             {
-                ListNode *newPtr = getNewNode(t); //將新增項創造成節點
+                ListNode *newPtr = getNewNode( t ); //將新增項創造成節點
                 newPtr->nextPtr = tempPtr; //將下一項設為新增項的next指標
                 currentPtr->nextPtr = newPtr; //將目前項的next指標設為新結點
             }
@@ -190,7 +190,7 @@ void PolynomialList::addTerm( int i, int tCoef ) //Overloading addterm function
                 tempPtr->data.coef += t.coef;
             else
             {
-                ListNode *newPtr = getNewNode(t);
+                ListNode *newPtr = getNewNode( t );
                 newPtr->nextPtr = tempPtr;
                 currentPtr->nextPtr = newPtr;
             }
@@ -390,7 +390,7 @@ PolynomialList PolynomialList::operator + ( const PolynomialList& p )
     
     while( currentPtr != 0 )
     {
-        temp.addTerm(currentPtr->data.exp, currentPtr->data.coef); //將兩多項式相加
+        temp.addTerm( currentPtr->data.exp, currentPtr->data.coef ); //將兩多項式相加
         currentPtr = currentPtr->nextPtr;
     }
     
@@ -410,7 +410,7 @@ PolynomialList PolynomialList::operator - ( const PolynomialList& p )
     
     while( currentPtr != 0 )
     {
-        temp.addTerm(currentPtr->data.exp, -(currentPtr->data.coef)); //將兩多項式相減
+        temp.addTerm( currentPtr->data.exp, -( currentPtr->data.coef ) ); //將兩多項式相減
         currentPtr = currentPtr->nextPtr;
     }
     
